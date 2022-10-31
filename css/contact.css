@@ -1,0 +1,215 @@
+body
+{   
+    margin:0;
+    padding:0;
+    font-family: 'segoe ui light';
+    /* overflow: hidden; */
+    background-color: black;
+}
+h3{
+    color: white;
+}
+.sideBar
+{
+    position:fixed;
+    top:0;
+    left:-250px;
+    background-color: #262626;
+    width:250px;
+    height:100%;
+    transition: .3s;
+}
+
+.active
+{
+    left:0;
+}
+
+.sideBar ul
+{
+    margin:0;
+    padding:20px 0;
+}
+
+.sideBar ul li
+{
+    list-style: none;
+}
+.sideBar ul li a
+{
+    padding:10px 20px;
+    color:#fff;
+    display:block;
+    text-decoration: none;
+}
+
+.sideBar-btn
+{
+position: absolute;
+top: 0;
+right: -50px;
+width: 50px;
+height: 50px;
+box-sizing: border-box;
+cursor: pointer;
+background: #f5f5f5;
+border: none;
+outline: none;
+}
+.sideBar-btn span
+{
+display: block;
+width: 35px;
+height: 3px;
+background: #262626;
+position: absolute;
+top: 24px;
+transition: 0.3s
+}
+.sideBar-btn span:before
+{
+    content:'';
+    position: absolute;
+    top:-10px;
+    left:0;
+    width:100%;
+    height:3px;
+    background: #262626;
+    transition: .3s;
+}
+.sideBar-btn span::after
+{
+    content:'';
+    position: absolute;
+    top:10px;
+    left:0;
+    width:100%;
+    height:3px;
+    background: #262626;
+    transition: .3s;
+}
+
+
+.sideBar-btn.toggle span
+{
+    background:transparent ;
+}
+
+
+.sideBar-btn.toggle span:before
+{
+top: 0;
+transform: rotate(45deg);
+}
+.sideBar-btn.toggle span:after
+{
+top:0;
+transform: rotate(-45deg);
+}
+
+
+
+/*-------------------------------------------------------Conatct ------------------------------------------------------------------ */
+
+.Contactus .item-info
+{
+    margin-top: 4rem;
+}
+.Contactus .icon-item
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.Contactus .icon
+{
+    width: 60px;
+    height: 60px;
+    line-height: 4;
+    border-radius: 50%;
+    border: none;
+    transition: 1s;
+    background-color: #eee;
+
+}
+.Contactus .icon:hover
+{
+    background-color: black;
+    color:#fff;
+}
+.Contactus .icon .fa-solid
+{
+    font-size:20px;
+}
+
+
+/* .form-btn
+{
+    margin-left: 4rem;
+} */
+.section-title 
+{
+    width:100%;
+    text-align: center;
+}
+.form-btn button
+{
+    padding: 7px;
+    border-radius: 6px;
+    width: 8rem;
+    border: none;
+    background-color: black;
+    color: #fff;
+    transition: 1s;
+}
+.form-btn button:hover
+{
+    background-color: #fff;
+    color:black;
+    border:1px solid black;
+}
+
+.form-group.error input
+{
+    border-color: #900101;
+}
+.form-group 
+{
+    position:relative;
+}
+.form-group i
+{
+    /* position:absolute;
+    top: 10px;
+    left: 620px; */
+    visibility: hidden;
+}
+.form-group small
+{
+    position:relative;
+    /* bottom:0;
+    left:0; */ 
+    visibility: hidden;
+}
+
+.form-group.success input
+{
+    border-color: #2ecc2e;
+}
+.form-group.success i.fa-circle-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-group.error i.fa-circle-exclamation{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-group.error small
+{
+    color: #e74c3c;
+    visibility: visible;
+}
+/* .form-group.success .fa-circle-check{
+    visibility: visible;
+} */
